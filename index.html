@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Piyush Kumar's developer portfolio featuring projects, skills, and software engineering progress.">
+
+    <title>Piyush Kumar | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js"
+        }
+    }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home">Piyush<span>.</span>dev</a>
+
+        <div class="navlinks">
+            <a href="#projects">Projects</a>
+            <a href="#journey">Progress</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <span class="pill">Open to internships</span>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">Developer Portfolio</p>
+
+                <h1>
+                    Building practical web apps and learning by shipping.
+                </h1>
+
+                <p class="lead">
+                    Hi, I am <strong id="heroName">Piyush Kumar</strong>, a computer science student focused on Python,
+                    web development, databases, and steady software engineering fundamentals.
+                </p>
+
+                <div class="actions">
+                    <a class="btn primary" href="#projects">Explore projects</a>
+                    <a class="btn" href="#contact">Contact me</a>
+                </div>
+            </div>
+
+            <aside class="profile-card" aria-label="Profile summary">
+                <div class="avatar" id="avatar">PK</div>
+
+                <h2 id="profileName">Piyush Kumar</h2>
+
+                <p id="profileBio">
+                    Student developer creating portfolio-ready projects with clean interfaces, documented setup, and
+                    practical problem solving.
+                </p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <strong id="projectCount">2</strong>
+                        <small>Projects</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>5th</strong>
+                        <small>Semester</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>DSA</strong>
+                        <small>Practice</small>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="projects">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Interactive Workbench</p>
+                    <h2>Projects in progress</h2>
+                </div>
+
+                <p>Click a building or project card to view details.</p>
+            </div>
+
+            <div class="village-shell">
+                <div class="village-hud">
+                    <strong>Developer Village - Level 5</strong>
+                    <span>XP <b id="coins">1,250</b> / Focus 85%</span>
+                </div>
+
+                <canvas
+                    id="villageCanvas"
+                    aria-label="Interactive 3D village. Click a building to view its project."
+                ></canvas>
+
+                <p class="village-hint">
+                    Move your mouse to explore. Click a building to open its project.
+                </p>
+
+                <p class="fallback" id="villageFallback">
+                    3D view unavailable. Explore the project cards below.
+                </p>
+            </div>
+
+            <div class="project-grid" id="projectGrid"></div>
+        </section>
+
+        <section id="journey">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Roadmap</p>
+                    <h2>Current learning progress</h2>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <article class="milestone">
+                    <small>01 - Now</small>
+                    <h3>Finish usable project flows</h3>
+                    <p>
+                        Convert ideas into working features, handle validation, and keep the code easy to explain.
+                    </p>
+                </article>
+
+                <article class="milestone">
+                    <small>02 - Next</small>
+                    <h3>Deploy and document</h3>
+                    <p>
+                        Add screenshots, setup steps, repository links, and short demos for each completed project.
+                    </p>
+                </article>
+
+                <article class="milestone">
+                    <small>03 - Ongoing</small>
+                    <h3>Prepare for interviews</h3>
+                    <p>
+                        Practice DSA, revise CS fundamentals, and learn to communicate project decisions clearly.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Toolbox</p>
+                    <h2>Skills and technologies</h2>
+                </div>
+            </div>
+
+            <div class="skills" aria-label="Skills list">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Python</span>
+                <span class="skill">C++</span>
+                <span class="skill">Flask</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">NumPy</span>
+                <span class="skill">Git and GitHub</span>
+                <span class="skill">Basic DSA</span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Have an idea, internship, or project feedback?</h2>
+                    <p>
+                        I am available for collaboration, learning opportunities, and software development internships.
+                    </p>
+                </div>
+
+                <a
+                    class="btn primary"
+                    id="emailLink"
+                    href="mailto:kumarpiyush14024@gmail.com"
+                >
+                    Get in touch
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            &copy; <span id="year"></span>
+            <span id="footerName">Piyush Kumar</span>. Built with HTML, CSS, JavaScript, and Three.js.
+        </span>
+
+        <span>
+            <a href="#home">Back to top</a>
+            <a
+                id="githubLink"
+                href="https://github.com/pPiyushK"
+                target="_blank"
+                rel="noreferrer"
+            >GitHub</a>
+        </span>
+    </footer>
+</div>
+
+<div
+    class="modal-backdrop"
+    id="detailModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="detailTitle"
+>
+    <div class="modal">
+        <div class="modal-head">
+            <div>
+                <p class="eyebrow">Project details</p>
+                <h2 id="detailTitle"></h2>
+            </div>
+
+            <button class="close" type="button" data-close="detailModal" aria-label="Close project details">x</button>
+        </div>
+
+        <p id="detailDescription"></p>
+        <div class="tags" id="detailTags"></div>
+
+        <div class="progress-head">
+            <span>Current progress</span>
+            <strong id="detailProgress"></strong>
+        </div>
+
+        <div class="progress">
+            <span id="detailBar"></span>
+        </div>
+
+        <p id="detailNext"></p>
+
+        <div class="actions">
+            <a
+                class="btn primary"
+                id="detailGithub"
+                href="https://github.com/pPiyushK"
+                target="_blank"
+                rel="noreferrer"
+            >View repository</a>
+
+            <button class="btn" type="button" data-close="detailModal">Close</button>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="js/village3d.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
