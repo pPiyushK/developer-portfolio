@@ -25,6 +25,7 @@ Use any static server from the project folder. For example:
 ```bash
 npx serve .
 ```
+[Piyush](https://www.ppiyushk.me/)
 
 Keep internet access enabled because Three.js loads from a CDN.
 

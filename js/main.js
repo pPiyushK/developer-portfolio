@@ -31,8 +31,8 @@ const projects = [
         icon: "SMS",
         status: "Learning build",
         description:
-            "A Python project for experimenting with image operations, NumPy workflows, and clear before-and-after outputs.",
-        tags: ["Python", "Flask", "MySQL"],
+            "A Python project for experimenting with A CRUD web application built using Flask and SQLite.",
+        tags: ["Python", "Flask", "SQLite"],
         progress: 85,
         next:
             "Next: include sample images, list supported operations, handle edge cases, and add a short demo.",
